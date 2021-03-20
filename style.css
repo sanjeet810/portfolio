@@ -429,6 +429,20 @@ button[type="submit"]:hover{
     border: #0050ea 2px solid;
     transition: background 0.3s linear ; 
 }
+.footer{
+    background-color: #000;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+  
+    color: #fff;
+    font-size: 1.2rem;
+}
         @media screen and (max-width: 768px) {
             .mobile_menu{
                 display: inline-block;
@@ -488,9 +502,19 @@ button[type="submit"]:hover{
         .left_cont, .right_cont{
             width: 90%;
         }
+        .left_cont .fas {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 500 !important ;
+        }
+        form{
+    width: 90%;
+}
         button[type="submit"]{
             font-size: 0.9rem;
             width: 60%;
             height: auto;
+        }
+        .footer a{       
+            font-size: 1rem;
         }
         }
