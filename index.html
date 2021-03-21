@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- {% load static %} -->
+    <!-- <link rel="stylesheet" href="{% static '/css/style.css' %}"/> -->
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -19,7 +24,7 @@
 
 <body>
     <div class="mobile_menu sticky-top">
-        <div class="menu  ">
+        <div class="menu">
             <i class="fas fa-times" onclick="changemenu()"></i>
         </div>
     </div>
@@ -35,12 +40,12 @@
                 <p>Full Stack web Developer in Mumbai</p>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#slider">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#Qualifications">Qualifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul >
+                    <li><a onclick="changemenu()" href="#slider">Home</a></li>
+                    <li><a onclick="changemenu()" href="#about">About</a></li>
+                    <li><a onclick="changemenu()"href="#skills">skills</a></li>
+                    <li><a onclick="changemenu()"href="#Qualifications">Qualifications</a></li>
+                    <li><a onclick="changemenu()"href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +59,7 @@
                     <div class="swiper-slide">
                         <div class="left">
                             <h1>I am <br> a Designer</h1>
-                            <p>A complete designer having Experience in Figma and Adobe XD.
+                            <p>A complete designer having Experience in Figma and Adobe Photoshop.
                                 All types of UI/UX designs.
                             </p>
                             <div class="btn">
@@ -297,11 +302,7 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script>
-     $(function(){
-      $("#slider").load("standard.html"); 
-    });
-    </script>  -->
+
 </script>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -319,10 +320,7 @@
             el: '.swiper-pagination',
             clickable: true,
         },
-        //  navigation: {
-        //    nextEl: '.swiper-button-next',
-        //    prevEl: '.swiper-button-prev',
-        //  },
+    
     });
 </script>
 <script> 
