@@ -1,5 +1,5 @@
 *{
-    margin:0%;
+    margin:0% ;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -376,6 +376,11 @@ nav ul a:hover{
     width: 100%;
     height:auto;
 }
+
+.left_cont .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500 !important ;
+}
 .right_cont{
     width: 60%;
     height: auto; 
@@ -502,10 +507,7 @@ button[type="submit"]:hover{
         .left_cont, .right_cont{
             width: 90%;
         }
-        .left_cont .fas {
-            font-family: "Font Awesome 5 Pro";
-            font-weight: 500 !important ;
-        }
+       
         form{
     width: 90%;
 }
